@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: minst-data-expansion-o
+Version: 1.3.post3
+Summary: Allow users to add more training data in MINST
+Home-page: https://swdcgghxa.github.io/40840159
+Author: 40840159
+Author-email: 40840159@gm.nfu.edu.tw
+Maintainer: 40840159
+Maintainer-email: 40840159@gm.nfu.edu.tw
+License: UNKNOWN
+Download-URL: https://swdcgghxa.github.io/minst_data_expansion_o
+Project-URL: Bug Tracker, https://bugs.example.com
+Project-URL: Documentation, https://docs.example.com
+Project-URL: Source Code, https://code.example.com
+Description: # minst expansion to add data
+        ### Author:40840159
+        ### machine translation
+        ### Question contact:40840159@gm.nfu.edu.tw
+        
+        1. Folder layout (very important)
+        ```
+        workspace
+        └── workspace
+            └── 40840159
+                ├── 0
+                │   │── a.jpg
+                │   └── b.jpg
+                │   └── n.jpg So on and so forth
+                ├── 1
+                ├── 2
+                ├── 3
+                └── 9 So on and so forth
+        ```
+        2. First need to introduce (note: the pictures have been normalized)
+        ```python
+        from minst_data_expansion_o import x_train, y_train, x_test, y_test
+        ```
+        
+        ## There are also 2 lovely function adjustments
+        * get_simple_result
+          ```python
+          def get_simple_result(x):
+            '''x:np.ndarray
+            return int
+            '''
+          ```
+        * img_use_increase
+          ```python
+          def img_use_increase(img,multiple=10,noise_removal=100):
+            '''img (...,x,x) 0~1 float
+            return (...,x,x) 0~1 float'''
+          ```
+        
+Keywords: minst,tensorflow,expansion,minst_data_expansion
+Platform: Independant
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

@@ -1,0 +1,34 @@
+<p># minst expansion to add data
+### Author:40840159
+### machine translation
+### Question contact:40840159&#64;gm.nfu.edu.tw</p>
+<p>1. Folder layout (very important)
+<tt>`
+workspace
+└── workspace
+.&nbsp;&nbsp; └── 40840159
+.&nbsp;&nbsp; .&nbsp;&nbsp; ├── 0
+.&nbsp;&nbsp; .&nbsp;&nbsp; │&nbsp;&nbsp; │── a.jpg
+.&nbsp;&nbsp; .&nbsp;&nbsp; │&nbsp;&nbsp; └── b.jpg
+.&nbsp;&nbsp; .&nbsp;&nbsp; │&nbsp;&nbsp; └── n.jpg So on and so forth
+.&nbsp;&nbsp; .&nbsp;&nbsp; ├── 1
+.&nbsp;&nbsp; .&nbsp;&nbsp; ├── 2
+.&nbsp;&nbsp; .&nbsp;&nbsp; ├── 3
+.&nbsp;&nbsp; .&nbsp;&nbsp; └── 9 So on and so forth
+`</tt>
+2. First need to introduce (note: the pictures have been normalized)
+<tt>`python
+from minst_data_expansion_o import x_train, y_train, x_test, y_test
+`</tt></p>
+<p>## There are also 2 lovely function adjustments
+* get_simple_result
+<tt>`python
+def get_simple_result(x):
+<span class="pre">..'''x:np.ndarray</span> return <span class="pre">int'''</span>
+`</tt>
+* img_use_increase
+<tt>`python
+def img_use_increase(img,multiple=10,noise_removal=100):
+<span class="pre">..'''img</span> <span class="pre">(...,x,x)</span> 0~1 float return <span class="pre">(...,x,x)</span> 0~1 <span class="pre">float'''</span>
+`</tt></p>
+
